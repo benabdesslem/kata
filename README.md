@@ -200,7 +200,7 @@ To run the script, simply execute the following command:
 ./test_api.sh
 ````
 
-![script](./images/1.png)
+![script](./images/2.png)
 
 #### Testing:
 
