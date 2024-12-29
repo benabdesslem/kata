@@ -1,0 +1,66 @@
+<h1 class="text-center">Liste des produits</h1>
+
+<p-button label="Créer produit" (onClick)="onCreate()" class="block text-center"/>
+
+<p-dataView #dv [value]="products()">
+  <ng-template pTemplate="list" let-products>
+    @for (product of products; track product) {
+      <p-card class="block mb-2">
+        <div class="grid">
+          <div class="col">
+            <div class="md:w-40 relative">
+              <img
+                class="block xl:block mx-auto rounded-border w-full"
+                [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image"
+                [alt]="product.name"
+              />
+              <p-tag
+                [value]="product.inventoryStatus"
+                [severity]="getSeverity(product)"
+                class="absolute"
+                styleClass="dark:!bg-surface-900"
+                [style.left.px]="4"
+                [style.top.px]="4"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <span class="font-medium text-secondary text-sm">{{ product.category }}</span>
+            <div class="text-lg font-medium text-900 mt-2">{{ product.name }}</div>
+            <div class="text-sm mt-2">{{ product.description }}</div>
+          </div>
+          <div class="col">
+            <div class="text-right">
+              <p-rating
+                [(ngModel)]="product.rating"
+                [cancel]="false"
+                readonly
+                disabled
+                class="text-xl font-bold"
+              ></p-rating>
+              <div class="text-4xl lg:font-bold mt-2">{{ product.price | currency }}</div>
+            </div>
+          </div>
+        </div>
+
+        <ng-template pTemplate="footer">
+          <div class="flex gap-3 mt-1">
+            <p-button label="Ajouter au panier" severity="primary" (onClick)="onAddToCart(product)"/>
+            <p-button label="Modifier" severity="secondary" (onClick)="onUpdate(product)"/>
+            <p-button label="Supprimer" severity="danger" (onClick)="onDelete(product)"/>
+          </div>
+        </ng-template>
+      </p-card>
+    }
+  </ng-template>
+</p-dataView>
+
+<p-dialog [(visible)]="isDialogVisible"
+          [style]="{ width: '50vw' }"
+          header="Ajout/Edition produit">
+  <app-product-form
+    [product]="editedProduct()"
+    (save)="onSave($event)"
+    (cancel)="onCancel()"
+  />
+</p-dialog>

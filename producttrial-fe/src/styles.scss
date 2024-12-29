@@ -1,0 +1,80 @@
+/* PrimeNG */
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/primeng.min.css";
+
+/* Quill */
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+
+/* Custom SCSS */
+@import "variables";
+
+/* Main styles */
+html,
+body {
+  margin: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-font-color);
+  height: 100%;
+
+  .transparent .navbar {
+    display: none;
+  }
+
+  .root-container {
+    .small {
+      font-size: 12px;
+    }
+
+    .navbar {
+      .p-menu {
+        top: 52px !important;
+        left: unset !important;
+        right: 5px !important;
+      }
+    }
+
+    app-breadcrumb .p-menuitem-text {
+      color: var(--primary-font-color);
+    }
+  }
+}
+
+.unavailable {
+  color: var(--disabled-text);
+  pointer-events: none;
+
+  * {
+    border: 0;
+  }
+
+  .p-dropdown-trigger,
+  .p-multiselect-trigger {
+    display: none;
+  }
+
+  .p-float-label input.p-filled~label {
+    top: 0rem !important;
+  }
+
+  app-file-upload-input {
+    .custom-file-upload {
+      p,
+      div,
+      span {
+        display: none;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+.flag {
+  width: 20px !important;
+  display: inline-block;
+  height: 14px !important;
+  color: transparent;
+}

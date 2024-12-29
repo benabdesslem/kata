@@ -1,0 +1,1182 @@
+<xliff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd" xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="test" datatype="plaintext" source-language="fr-FR" target-language="fr-FR">
+    <body>
+      <trans-unit id="welcomeLoginForm">
+        <source>Bienvenue <x id='INTERPOLATION' equiv-text='{{firstName}}'/></source>
+        <target>Bienvenue <x id='INTERPOLATION' equiv-text='{{firstName}}'/></target>
+      </trans-unit>
+      <trans-unit id="logInFormTitle">
+        <source>Connexion</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="fillEmail">
+        <source>Entrez votre adresse mail</source>
+        <target>Entrez votre adresse mail</target>
+      </trans-unit>
+      <trans-unit id="searchEmailAction">
+        <source>Vérification...</source>
+        <target>Vérification...</target>
+      </trans-unit>
+      <trans-unit id="emailRequired">
+        <source>Adresse mail requise</source>
+        <target>Adresse mail requise</target>
+      </trans-unit>
+      <trans-unit id="emailInvalid">
+        <source>Adresse mail non valide</source>
+        <target>Adresse mail non valide</target>
+      </trans-unit>
+      <trans-unit id="emailNotFound">
+        <source>Adresse mail introuvable</source>
+        <target>Adresse mail introuvable</target>
+      </trans-unit>
+      <trans-unit id="goToLoginSecondStep">
+        <source>Suivant</source>
+        <target>Suivant</target>
+      </trans-unit>
+      <trans-unit id="passwordRequired">
+        <source>Mot de passe requis</source>
+        <target>Mot de passe requis</target>
+      </trans-unit>
+      <trans-unit id="passwordInvalid">
+        <source>Mot de passe non valide</source>
+        <target>Mot de passe non valide</target>
+      </trans-unit>
+      <trans-unit id="wrongPassword">
+        <source>Mauvais email / mot de passe</source>
+        <target>Mauvais email / mot de passe</target>
+      </trans-unit>
+      <trans-unit id="goToLoginFirstStep">
+        <source>Retour</source>
+        <target>Retour</target>
+      </trans-unit>
+      <trans-unit id="goToDashboard">
+        <source>Connexion</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="forgottenPassword">
+        <source>Mot de passe oublié ?</source>
+        <target>Mot de passe oublié ?</target>
+      </trans-unit>
+      <trans-unit id="fr-FRLanguage">
+        <source>Français</source>
+        <target>Français</target>
+      </trans-unit>
+      <trans-unit id="en-GBLanguage">
+        <source>Anglais</source>
+        <target>Anglais</target>
+      </trans-unit>
+      <trans-unit id="enterEmailToolTip">
+        <source>Entrez votre adresse mail</source>
+        <target>Entrez votre adresse mail</target>
+      </trans-unit>
+      <trans-unit id="enterPasswordToolTip">
+        <source>Entrez votre mot de passe</source>
+        <target>Entrez votre mot de passe</target>
+      </trans-unit>
+      <trans-unit id="resetPasswordToolTip">
+        <source>Appuyez sur entrer pour réinitialiser votre mot de passe</source>
+        <target>Appuyez sur entrer pour réinitialiser votre mot de passe</target>
+      </trans-unit>
+      <trans-unit id="fillPassword">
+        <source>Entrez votre mot de passe</source>
+        <target>Entrez votre mot de passe</target>
+      </trans-unit>
+      <trans-unit id="homeNav">
+        <source>Accueil</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="timelineNav">
+        <source>Timeline</source>
+        <target>Timeline</target>
+      </trans-unit>
+      <trans-unit id="timelinePerDayNav">
+        <source>Rendez-vous</source>
+        <target>Rendez-vous</target>
+      </trans-unit>
+      <trans-unit id="adminNav">
+        <source>Admin</source>
+        <target>Admin</target>
+      </trans-unit>
+      <trans-unit id="blogsNav">
+        <source>Blogs</source>
+        <target>Blogs</target>
+      </trans-unit>
+      <trans-unit id="postsNav">
+        <source>Publications</source>
+        <target>Publications</target>
+      </trans-unit>
+      <trans-unit id="settingsNav">
+        <source>Paramètres</source>
+        <target>Paramètres</target>
+      </trans-unit>
+      <trans-unit id="dashboardNav">
+        <source>Tableau de bord</source>
+        <target>Tableau de bord</target>
+      </trans-unit>
+      <trans-unit id="usersNav">
+        <source>Utilisateurs</source>
+        <target>Utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="rolesNav">
+        <source>Rôles</source>
+        <target>Rôles</target>
+      </trans-unit>
+      <trans-unit id="tasksNav">
+        <source>Tâches</source>
+        <target>Tâches</target>
+      </trans-unit>
+      <trans-unit id="translationsNav">
+        <source>Traductions</source>
+        <target>Traductions</target>
+      </trans-unit>
+      <trans-unit id="projectsNav">
+        <source>Projets</source>
+        <target>Projets</target>
+      </trans-unit>
+      <trans-unit id="pagesNav">
+        <source>Pages</source>
+        <target>Pages</target>
+      </trans-unit>
+      <trans-unit id="textsNav">
+        <source>Textes</source>
+        <target>Textes</target>
+      </trans-unit>
+      <trans-unit id="textEditionNav">
+        <source>Edition</source>
+        <target>Edition</target>
+      </trans-unit>
+      <trans-unit id="userSettingsNav">
+        <source>Préférences utilisateur</source>
+        <target>Préférences utilisateur</target>
+      </trans-unit>
+      <trans-unit id="profileNav">
+        <source>Profil</source>
+        <target>Profil</target>
+      </trans-unit>
+      <trans-unit id="mailsNav">
+        <source>Messages</source>
+        <target>Messages</target>
+      </trans-unit>
+      <trans-unit id="notificationsNav">
+        <source>Notifications</source>
+        <target>Notifications</target>
+      </trans-unit>
+      <trans-unit id="logoutNav">
+        <source>Se déconnecter</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="superAdminRole">
+        <source>Administrateur principal</source>
+        <target>Administrateur principal</target>
+      </trans-unit>
+      <trans-unit id="adminRole">
+        <source>Administrateur</source>
+        <target>Administrateur</target>
+      </trans-unit>
+      <trans-unit id="bloggerRole">
+        <source>Blogueur</source>
+        <target>Blogueur</target>
+      </trans-unit>
+      <trans-unit id="basicRole">
+        <source>Basique</source>
+        <target>Basique</target>
+      </trans-unit>
+      <trans-unit id="readOpe">
+        <source>Lecture</source>
+        <target>Lecture</target>
+      </trans-unit>
+      <trans-unit id="writeOpe">
+        <source>Ecriture</source>
+        <target>Ecriture</target>
+      </trans-unit>
+      <trans-unit id="executeOpe">
+        <source>Execution</source>
+        <target>Execution</target>
+      </trans-unit>
+      <trans-unit id="readOpeDesc">
+        <source>Lecture seule</source>
+        <target>Lecture seule</target>
+      </trans-unit>
+      <trans-unit id="writeOpeDesc">
+        <source>Mise à  jour</source>
+        <target>Mise à  jour</target>
+      </trans-unit>
+      <trans-unit id="executeOpeDesc">
+        <source>Ajout, suppression</source>
+        <target>Ajout, suppression</target>
+      </trans-unit>
+      <trans-unit id="usersAdminFunc">
+        <source>Administrateur des utilisateurs</source>
+        <target>Administrateur des utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="blogAdminFunc">
+        <source>Administrateur des blogs</source>
+        <target>Administrateur des blogs</target>
+      </trans-unit>
+      <trans-unit id="roleAdminFunc">
+        <source>Administrateur des roles</source>
+        <target>Administrateur des roles</target>
+      </trans-unit>
+      <trans-unit id="usersAdminFuncDesc">
+        <source>Accès des utilisateurs</source>
+        <target>Accès des utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="blogAdminFuncDesc">
+        <source>Accès des blogs</source>
+        <target>Accès des blogs</target>
+      </trans-unit>
+      <trans-unit id="roleAdminFuncDesc">
+        <source>Accès des rôles</source>
+        <target>Accès des rôles</target>
+      </trans-unit>
+      <trans-unit id="noColor">
+        <source>Pas de couleur</source>
+        <target>Pas de couleur</target>
+      </trans-unit>
+      <trans-unit id="greenColor">
+        <source>Vert</source>
+        <target>Vert</target>
+      </trans-unit>
+      <trans-unit id="blueColor">
+        <source>Bleu</source>
+        <target>Bleu</target>
+      </trans-unit>
+      <trans-unit id="redColor">
+        <source>Rouge</source>
+        <target>Rouge</target>
+      </trans-unit>
+      <trans-unit id="orangeColor">
+        <source>Orange</source>
+        <target>Orange</target>
+      </trans-unit>
+      <trans-unit id="yellowColor">
+        <source>Jaune</source>
+        <target>Jaune</target>
+      </trans-unit>
+      <trans-unit id="burgundyColor">
+        <source>Bordeaux</source>
+        <target>Bordeaux</target>
+      </trans-unit>
+      <trans-unit id="indigoColor">
+        <source>Indigo</source>
+        <target>Indigo</target>
+      </trans-unit>
+      <trans-unit id="cyanColor">
+        <source>Cyan</source>
+        <target>Cyan</target>
+      </trans-unit>
+      <trans-unit id="purpleColor">
+        <source>Violet</source>
+        <target>Violet</target>
+      </trans-unit>
+      <trans-unit id="newButton">
+        <source>Nouveau</source>
+        <target>Nouveau</target>
+      </trans-unit>
+      <trans-unit id="toggleShowDeletedItems">
+        <source>Changer le mode d'affichage des items supprimés</source>
+        <target>Changer le mode d'affichage des items supprimés</target>
+      </trans-unit>
+      <trans-unit id="exportButton">
+        <source>Exporter</source>
+        <target>Exporter</target>
+      </trans-unit>
+      <trans-unit id="deleteButton">
+        <source>Supprimer</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="importButton">
+        <source>Importer</source>
+        <target>Importer</target>
+      </trans-unit>
+      <trans-unit id="languageCodeLabel">
+        <source>Code langue (en, fr, es...)</source>
+        <target>Code langue (en, fr, es...)</target>
+      </trans-unit>
+      <trans-unit id="languageLocaleIdLabel">
+        <source>Locale id de la langue (en-GB, en-US...)</source>
+        <target>Locale id de la langue (en-GB, en-US...)</target>
+      </trans-unit>
+      <trans-unit id="languageNameLabel">
+        <source>Nom de la langue</source>
+        <target>Nom de la langue</target>
+      </trans-unit>
+      <trans-unit id="languageNameKeyLabel">
+        <source>Clé de réference i18n pour le nom du language</source>
+        <target>Clé de réference i18n pour le nom du language</target>
+      </trans-unit>
+      <trans-unit id="languageIconAltLabel">
+        <source>Déplacez votre icône de langue dans le dossier assets/flag sous le nom suivant : flag_placeholder_$code.png</source>
+        <target>Déplacez votre icône de langue dans le dossier assets/flag sous le nom suivant : flag_placeholder_$code.png</target>
+      </trans-unit>
+      <trans-unit id="languageIconLabel">
+        <source>Icône de la langue</source>
+        <target>Icône de la langue</target>
+      </trans-unit>
+      <trans-unit id="componentNameLabel">
+        <source>Nom du composant</source>
+        <target>Nom du composant</target>
+      </trans-unit>
+      <trans-unit id="selectComponentLabel">
+        <source>Sélectionner un composant</source>
+        <target>Sélectionner un composant</target>
+      </trans-unit>
+      <trans-unit id="translationi18nKeyLabel">
+        <source>Clé de réference i18n</source>
+        <target>Clé de réference i18n</target>
+      </trans-unit>
+      <trans-unit id="translationMeaningLabel">
+        <source>Signification</source>
+        <target>Signification</target>
+      </trans-unit>
+      <trans-unit id="translationDescriptionLabel">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="translationSourceTextLabel">
+        <source>Texte source</source>
+        <target>Texte source</target>
+      </trans-unit>
+      <trans-unit id="translationTextLabel">
+        <source>Texte</source>
+        <target>Texte</target>
+      </trans-unit>
+      <trans-unit id="roleNameLabel">
+        <source>Nom du rôle</source>
+        <target>Nom du rôle</target>
+      </trans-unit>
+      <trans-unit id="roleNamei18nKeyLabel">
+        <source>Clé de réference i18n pour le nom du rôle</source>
+        <target>Clé de réference i18n pour le nom du rôle</target>
+      </trans-unit>
+      <trans-unit id="roleDescriptionLabel">
+        <source>Description du rôle</source>
+        <target>Description du rôle</target>
+      </trans-unit>
+      <trans-unit id="roleColorSelectLabel">
+        <source>Couleur associée</source>
+        <target>Couleur associée</target>
+      </trans-unit>
+      <trans-unit id="usersFirstNameLabel">
+        <source>Prénom</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="usersLastNameLabel">
+        <source>Nom de famille</source>
+        <target>Nom de famille</target>
+      </trans-unit>
+      <trans-unit id="usersRolesLabel">
+        <source>Rôles</source>
+        <target>Rôles</target>
+      </trans-unit>
+      <trans-unit id="usersEmailLabel">
+        <source>Adresse mail</source>
+        <target>Adresse mail</target>
+      </trans-unit>
+      <trans-unit id="usersNicknameLabel">
+        <source>Pseudonyme</source>
+        <target>Pseudonyme</target>
+      </trans-unit>
+      <trans-unit id="usersAddressLabel">
+        <source>Adresse</source>
+        <target>Adresse</target>
+      </trans-unit>
+      <trans-unit id="usersZipCodeLabel">
+        <source>Code postal</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="usersCityLabel">
+        <source>Ville</source>
+        <target>Ville</target>
+      </trans-unit>
+      <trans-unit id="usersCountryLabel">
+        <source>Pays</source>
+        <target>Pays</target>
+      </trans-unit>
+      <trans-unit id="usersPhoneLabel">
+        <source>Numéro de téléphone</source>
+        <target>Numéro de téléphone</target>
+      </trans-unit>
+      <trans-unit id="usersActiveLabel">
+        <source>Actif ?</source>
+        <target>Actif ?</target>
+      </trans-unit>
+      <trans-unit id="notificationsTitle">
+        <source>Notifications</source>
+        <target>Notifications</target>
+      </trans-unit>
+      <trans-unit id="notificationsFlaggedLabel">
+        <source>Épinglée</source>
+        <target>Épinglée</target>
+      </trans-unit>
+      <trans-unit id="notificationsIsReadLabel">
+        <source>Lue ?</source>
+        <target>Lue ?</target>
+      </trans-unit>
+      <trans-unit id="notificationsLevelLabel">
+        <source>Niveau</source>
+        <target>Niveau</target>
+      </trans-unit>
+      <trans-unit id="notificationsMessageLabel">
+        <source>Message</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="notificationsDateLabel">
+        <source>Date</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="notificationsLowLevel">
+        <source>Bas</source>
+        <target>Bas</target>
+      </trans-unit>
+      <trans-unit id="notificationsNormalLevel">
+        <source>Normal</source>
+        <target>Normal</target>
+      </trans-unit>
+      <trans-unit id="notificationsWarningLevel">
+        <source>Alarmant</source>
+        <target>Alarmant</target>
+      </trans-unit>
+      <trans-unit id="notificationsCriticalLevel">
+        <source>Urgent</source>
+        <target>Urgent</target>
+      </trans-unit>
+      <trans-unit id="mailIsFlaggedLabel">
+        <source>Épinglé</source>
+        <target>Épinglé</target>
+      </trans-unit>
+      <trans-unit id="mailIsReadLabel">
+        <source>Lu ?</source>
+        <target>Lu ?</target>
+      </trans-unit>
+      <trans-unit id="mailLevelLabel">
+        <source>Niveau</source>
+        <target>Niveau</target>
+      </trans-unit>
+      <trans-unit id="mailSenderLabel">
+        <source>Envoyé par</source>
+        <target>Envoyé par</target>
+      </trans-unit>
+      <trans-unit id="mailTitleLabel">
+        <source>Intitulé</source>
+        <target>Intitulé</target>
+      </trans-unit>
+      <trans-unit id="mailDateLabel">
+        <source>Date</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="mailAttachmentLabel">
+        <source>Pièces jointes</source>
+        <target>Pièces jointes</target>
+      </trans-unit>
+      <trans-unit id="mailMessageLabel">
+        <source>Contenu</source>
+        <target>Contenu</target>
+      </trans-unit>
+      <trans-unit id="mailReceiverLabel">
+        <source>Destinataire</source>
+        <target>Destinataire</target>
+      </trans-unit>
+      <trans-unit id="userProfileFirstNameLabel">
+        <source>Prénom</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="userProfileLastNameLabel">
+        <source>Nom de famille</source>
+        <target>Nom de famille</target>
+      </trans-unit>
+      <trans-unit id="userProfileNicknameLabel">
+        <source>Surnom</source>
+        <target>Surnom</target>
+      </trans-unit>
+      <trans-unit id="userProfileAddressLabel">
+        <source>Adresse</source>
+        <target>Adresse</target>
+      </trans-unit>
+      <trans-unit id="userProfileZipCodeLabel">
+        <source>Code postal</source>
+        <target>Code postal</target>
+      </trans-unit>
+      <trans-unit id="userProfileCityLabel">
+        <source>Ville</source>
+        <target>Ville</target>
+      </trans-unit>
+      <trans-unit id="userProfileCountryLabel">
+        <source>Pays</source>
+        <target>Pays</target>
+      </trans-unit>
+      <trans-unit id="userProfileEmailLabel">
+        <source>Adresse mail</source>
+        <target>Adresse mail</target>
+      </trans-unit>
+      <trans-unit id="userProfilePhoneLabel">
+        <source>Numéro de téléphone</source>
+        <target>Numéro de téléphone</target>
+      </trans-unit>
+      <trans-unit id="userProfilePasswordSection">
+        <source>Mot de passe</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="userProfileResetPasswordButton">
+        <source>Réinitialiser le mot de passe</source>
+        <target>Réinitialiser le mot de passe</target>
+      </trans-unit>
+      <trans-unit id="userProfilePictureSection">
+        <source>Photo de profil</source>
+        <target>Photo de profil</target>
+      </trans-unit>
+      <trans-unit id="userProfileCancelButton">
+        <source>Annuler</source>
+        <target>Annuler</target>
+      </trans-unit>
+      <trans-unit id="userProfileSaveButton">
+        <source>Enregistrer</source>
+        <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="userProfileInformationSection">
+        <source>Informations</source>
+        <target>Informations</target>
+      </trans-unit>
+      <trans-unit id="fileUploadMaxSize">
+        <source>Taille maximale : <x id='INTERPOLATION' equiv-text='{{maxFileSize / 1000000}}' Mb/></source>
+        <target>Taille maximale : <x id='INTERPOLATION' equiv-text='{{maxFileSize / 1000000}}' Mb/></target>
+      </trans-unit>
+      <trans-unit id="fileUploadAllowedExtensions">
+        <source>Extensions acceptées <x id='INTERPOLATION' equiv-text='{{accept}}'/></source>
+        <target>Extensions acceptées <x id='INTERPOLATION' equiv-text='{{accept}}'/></target>
+      </trans-unit>
+      <trans-unit id="fileUploadDragAndDropText">
+        <source>Glissez et déposez ou cherchez vos fichiers</source>
+        <target>Glissez et déposez ou cherchez vos fichiers</target>
+      </trans-unit>
+      <trans-unit id="animatedButtonDefaultLabel">
+        <source>Enregistrer</source>
+        <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="animatedButtonLoadingLabel">
+        <source>Enregistrement...</source>
+        <target>Enregistrement...</target>
+      </trans-unit>
+      <trans-unit id="animatedButtonDoneLabel">
+        <source>Enregistré</source>
+        <target>Enregistré</target>
+      </trans-unit>
+      <trans-unit id="mailTitleSection">
+        <source>Messages</source>
+        <target>Messages</target>
+      </trans-unit>
+      <trans-unit id="shortListShowAllButton">
+        <source>Montrer tout</source>
+        <target>Montrer tout</target>
+      </trans-unit>
+      <trans-unit id="editionDialogArchiveSectionTitle">
+        <source>Archiver <x id='INTERPOLATION' equiv-text='{{entity.name}}'/></source>
+        <target>Archiver <x id='INTERPOLATION' equiv-text='{{entity.name}}'/></target>
+      </trans-unit>
+      <trans-unit id="editionDialogArchiveText">
+        <source>Si vous archivez <x id='INTERPOLATION' equiv-text='{{entity.name}}'/>, il ne sera pas possible de le récupérer par la suite !</source>
+        <target>Si vous archivez <x id='INTERPOLATION' equiv-text='{{entity.name}}'/>, il ne sera pas possible de le récupérer par la suite !</target>
+      </trans-unit>
+      <trans-unit id="editionDialogDeleteSectionTitle">
+        <source>Supprimer <x id='INTERPOLATION' equiv-text='{{entity.name}}'/></source>
+        <target>Supprimer <x id='INTERPOLATION' equiv-text='{{entity.name}}'/></target>
+      </trans-unit>
+      <trans-unit id="editionDialogDeleteText">
+        <source>Si vous supprimez <x id='INTERPOLATION' equiv-text='{{entity.name}}'/>, il ne sera pas possible de le récupérer par la suite !</source>
+        <target>Si vous supprimez <x id='INTERPOLATION' equiv-text='{{entity.name}}'/>, il ne sera pas possible de le récupérer par la suite !</target>
+      </trans-unit>
+      <trans-unit id="editionDialogCancelButton">
+        <source>Annuler</source>
+        <target>Annuler</target>
+      </trans-unit>
+      <trans-unit id="editionDialogSaveButton">
+        <source>Enregistrer</source>
+        <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="exportDialogHeaderTitle">
+        <source>Exporter les données</source>
+        <target>Exporter les données</target>
+      </trans-unit>
+      <trans-unit id="exportDialogChooseFormat">
+        <source>Choisir le format d'export</source>
+        <target>Choisir le format d'export</target>
+      </trans-unit>
+      <trans-unit id="exportDialogChooseData">
+        <source>Quelles données exporter ?</source>
+        <target>Quelles données exporter ?</target>
+      </trans-unit>
+      <trans-unit id="exportDialogCancelButton">
+        <source>Annuler</source>
+        <target>Annuler</target>
+      </trans-unit>
+      <trans-unit id="exportDialogExportButton">
+        <source>Exporter</source>
+        <target>Exporter</target>
+      </trans-unit>
+      <trans-unit id="columnsManagementHeaderTitle">
+        <source>Gestion des colonnes</source>
+        <target>Gestion des colonnes</target>
+      </trans-unit>
+      <trans-unit id="columnsManagementSaveButton">
+        <source>Enregistrer</source>
+        <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="tableCurrentPageReportTemplate">
+        <source>Affiche <x id='INTERPOLATION' equiv-text='{{first}}'/> à <x id='INTERPOLATION_1' equiv-text='{{last}}'/> sur <x id='INTERPOLATION_2' equiv-text='{{totalRecords}}'/> enregistrements</source>
+        <target>Affiche <x id='INTERPOLATION' equiv-text='{{first}}'/> à <x id='INTERPOLATION_1' equiv-text='{{last}}'/> sur <x id='INTERPOLATION_2' equiv-text='{{totalRecords}}'/> enregistrements</target>
+      </trans-unit>
+      <trans-unit id="deleteTranslationQuestion">
+        <source>Vous êtes sur le point de supprimer un texte et toutes ses traductions associées, continuer ?</source>
+        <target>Vous êtes sur le point de supprimer un texte et toutes ses traductions associées, continuer ?</target>
+      </trans-unit>
+      <trans-unit id="january">
+        <source>Janvier</source>
+        <target>Janvier</target>
+      </trans-unit>
+      <trans-unit id="february">
+        <source>Février</source>
+        <target>Février</target>
+      </trans-unit>
+      <trans-unit id="march">
+        <source>Mars</source>
+        <target>Mars</target>
+      </trans-unit>
+      <trans-unit id="april">
+        <source>Avril</source>
+        <target>Avril</target>
+      </trans-unit>
+      <trans-unit id="may">
+        <source>Mai</source>
+        <target>Mai</target>
+      </trans-unit>
+      <trans-unit id="june">
+        <source>Juin</source>
+        <target>Juin</target>
+      </trans-unit>
+      <trans-unit id="july">
+        <source>Juillet</source>
+        <target>Juillet</target>
+      </trans-unit>
+      <trans-unit id="august">
+        <source>Août</source>
+        <target>Août</target>
+      </trans-unit>
+      <trans-unit id="september">
+        <source>Septembre</source>
+        <target>Septembre</target>
+      </trans-unit>
+      <trans-unit id="october">
+        <source>Octobre</source>
+        <target>Octobre</target>
+      </trans-unit>
+      <trans-unit id="november">
+        <source>Novembre</source>
+        <target>Novembre</target>
+      </trans-unit>
+      <trans-unit id="december">
+        <source>Décembre</source>
+        <target>Décembre</target>
+      </trans-unit>
+      <trans-unit id="aboutToDeleteLanguage">
+        <source>Vous êtes sur le point de supprimer une langue et toutes ses traductions associées. Continuer ?</source>
+        <target>Vous êtes sur le point de supprimer une langue et toutes ses traductions associées. Continuer ?</target>
+      </trans-unit>
+      <trans-unit id="aboutToDeleteComponent">
+        <source>Vous êtes sur le point de supprimer un composant et toutes ses traductions associées. Continuer ?</source>
+        <target>Vous êtes sur le point de supprimer un composant et toutes ses traductions associées. Continuer ?</target>
+      </trans-unit>
+      <trans-unit id="aboutToDeleteBlogPost">
+        <source>Vous êtes sur le point de supprimer un post. Continuer ?</source>
+        <target>Vous êtes sur le point de supprimer un post. Continuer ?</target>
+      </trans-unit>
+      <trans-unit id="aboutToDeleteActionBlogPost">
+        <source>Vous êtes sur le point de <x id='INTERPOLATION' equiv-text='{{action}}'/> ce post. Continuer ?</source>
+        <target>Vous êtes sur le point de <x id='INTERPOLATION' equiv-text='{{action}}'/> ce post. Continuer ?</target>
+      </trans-unit>
+      <trans-unit id="postSnackbarDeletedMessage">
+        <source>Suppression du post réussie</source>
+        <target>Suppression du post réussie</target>
+      </trans-unit>
+      <trans-unit id="postSnackbarPublishedMessage">
+        <source>Publication du post réussie</source>
+        <target>Publication du post réussie</target>
+      </trans-unit>
+      <trans-unit id="postSnackbarDuplicatedMessage">
+        <source>Le post a bien été dupliqué</source>
+        <target>Le post a bien été dupliqué</target>
+      </trans-unit>
+      <trans-unit id="postSnackbarCreatedMessage">
+        <source>Création du post réussie</source>
+        <target>Création du post réussie</target>
+      </trans-unit>
+      <trans-unit id="postSnackbarUpdatedMessage">
+        <source>Mise à jour du post réussie</source>
+        <target>Mise à jour du post réussie</target>
+      </trans-unit>
+      <trans-unit id="postSnackbarSuccessMessage">
+        <source>Succès : <x id='INTERPOLATION' equiv-text='{{response.url}}'/></source>
+        <target>Succès : <x id='INTERPOLATION' equiv-text='{{response.url}}'/></target>
+      </trans-unit>
+      <trans-unit id="blogsSnackbarCreatedMessage">
+        <source>Création du blog réussie</source>
+        <target>Création du blog réussie</target>
+      </trans-unit>
+      <trans-unit id="blogsSnackbarDeletedMessage">
+        <source>Suppression du blog réussie</source>
+        <target>Suppression du blog réussie</target>
+      </trans-unit>
+      <trans-unit id="blogsSnackbarUpdatedMessage">
+        <source>Mise à jour du blog réussie</source>
+        <target>Mise à jour du blog réussie</target>
+      </trans-unit>
+      <trans-unit id="blogsCoverSnackbarUpdatedMessage">
+        <source>Mise à jour de la couverture du blog réussie </source>
+        <target>Mise à jour de la couverture du blog réussie </target>
+      </trans-unit>
+      <trans-unit id="blogsCoverSnackbarDeletedMessage">
+        <source>Suppression de la couverture du blog réussie</source>
+        <target>Suppression de la couverture du blog réussie</target>
+      </trans-unit>
+      <trans-unit id="exportAttachmentSnackbarDoneMessage">
+        <source>Export de la pièce jointe : <x id='INTERPOLATION' equiv-text='{{file}}'/> effectué</source>
+        <target>Export de la pièce jointe : <x id='INTERPOLATION' equiv-text='{{file}}'/> effectué</target>
+      </trans-unit>
+      <trans-unit id="formIsRequiredField">
+        <source>Ce champs est requis</source>
+        <target>Ce champs est requis</target>
+      </trans-unit>
+      <trans-unit id="formEmailInvalid">
+        <source>Adresse mail invalide</source>
+        <target>Adresse mail invalide</target>
+      </trans-unit>
+      <trans-unit id="formErrorField">
+        <source>Error sur ce champs</source>
+        <target>Error sur ce champs</target>
+      </trans-unit>
+      <trans-unit id="copiedIdSnackbarMessage">
+        <source>L'id a bien été copié</source>
+        <target>L'id a bien été copié</target>
+      </trans-unit>
+      <trans-unit id="fileTooBigSnackbarMessage">
+        <source>Le fichier sélectionné est trop volumineux</source>
+        <target>Le fichier sélectionné est trop volumineux</target>
+      </trans-unit>
+      <trans-unit id="intApiAdminFunc">
+        <source>Administrateur API interne</source>
+        <target>Administrateur API interne</target>
+      </trans-unit>
+      <trans-unit id="intBackendRole">
+        <source>Utilisateur interne</source>
+        <target>Utilisateur interne</target>
+      </trans-unit>
+      <trans-unit id="rolesSnackbarUpdatedMessage">
+        <source>Chargement des rôles réussi</source>
+        <target>Chargement des rôles réussi</target>
+      </trans-unit>
+      <trans-unit id="rolesSnackbarCreatedMessage">
+        <source>Création du rôle réussi</source>
+        <target>Création du rôle réussi</target>
+      </trans-unit>
+      <trans-unit id="rolesSnackbarDeletedMessage">
+        <source>Suppression du rôle réussie</source>
+        <target>Suppression du rôle réussie</target>
+      </trans-unit>
+      <trans-unit id="loginSuccessSnackbarMessage">
+        <source>Connexion réussie en tant que <x id='firstName' equiv-text='{{firstName}}'/> <x id='lastName' equiv-text='{{lastName}}'/></source>
+        <target>Connexion réussie en tant que <x id='firstName' equiv-text='{{firstName}}'/> <x id='lastName' equiv-text='{{lastName}}'/></target>
+      </trans-unit>
+      <trans-unit id="resultSuccessSnackbar">
+        <source>Succès</source>
+        <target>Succès</target>
+      </trans-unit>
+      <trans-unit id="resultErrorSnackbar">
+        <source>Erreur</source>
+        <target>Erreur</target>
+      </trans-unit>
+      <trans-unit id="anErrorOccuredSnackbar">
+        <source>Une erreur est survenue</source>
+        <target>Une erreur est survenue</target>
+      </trans-unit>
+      <trans-unit id="editionDialogSendButton">
+        <source>Envoyer</source>
+        <target>Envoyer</target>
+      </trans-unit>
+      <trans-unit id="exportDataDoneSnackbarMessage">
+        <source>Export des données au format <x id='format' equiv-text='{{format}}'/> réussi</source>
+        <target>Export des données au format <x id='format' equiv-text='{{format}}'/> réussi</target>
+      </trans-unit>
+      <trans-unit id="implementBackendSnackbarMessage">
+        <source>Le côté logique doit encore être implémenté</source>
+        <target>Le côté logique doit encore être implémenté</target>
+      </trans-unit>
+      <trans-unit id="angularCompSnackbarCreatedMessage">
+        <source>Création du composant angular réussie</source>
+        <target>Création du composant angular réussie</target>
+      </trans-unit>
+      <trans-unit id="angularCompSnackbarUpdatedMessage">
+        <source>Mise à jour du composant réussie</source>
+        <target>Mise à jour du composant réussie</target>
+      </trans-unit>
+      <trans-unit id="angularCompSnackbarDeletedMessage">
+        <source>Suppression du composant réussie</source>
+        <target>Suppression du composant réussie</target>
+      </trans-unit>
+      <trans-unit id="languageSnackbarCreatedMessage">
+        <source>Création du langage réussie</source>
+        <target>Création du langage réussie</target>
+      </trans-unit>
+      <trans-unit id="languageSnackbarUpdatedMessage">
+        <source>Mise à jour du langage réussie</source>
+        <target>Mise à jour du langage réussie</target>
+      </trans-unit>
+      <trans-unit id="languageSnackbarDeletedMessage">
+        <source>Suppression du langage réussie</source>
+        <target>Suppression du langage réussie</target>
+      </trans-unit>
+      <trans-unit id="translationSnackbarCreatedMessage">
+        <source>Création de la traduction réussie</source>
+        <target>Création de la traduction réussie</target>
+      </trans-unit>
+      <trans-unit id="translationSnackbarUpdatedMessage">
+        <source>Mise à jour de la traduction réussie</source>
+        <target>Mise à jour de la traduction réussie</target>
+      </trans-unit>
+      <trans-unit id="translationSnackbarDeletedMessage">
+        <source>Suppression de la traduction réussie</source>
+        <target>Suppression de la traduction réussie</target>
+      </trans-unit>
+      <trans-unit id="xliffSnackbarExportedMessage">
+        <source>Export des traductions réussi</source>
+        <target>Export des traductions réussi</target>
+      </trans-unit>
+      <trans-unit id="usersInactiveTooltip">
+        <source>Inactif</source>
+        <target>Inactif</target>
+      </trans-unit>
+      <trans-unit id="usersIsActiveLabel">
+        <source>Actif</source>
+        <target>Actif</target>
+      </trans-unit>
+      <trans-unit id="usersArchivedAtLabel">
+        <source>Archivé le</source>
+        <target>Archivé le</target>
+      </trans-unit>
+      <trans-unit id="usersCreatedAtLabel">
+        <source>Créé le</source>
+        <target>Créé le</target>
+      </trans-unit>
+      <trans-unit id="userSnackbarCreated">
+        <source>Création de l'utilisateur réussie</source>
+        <target>Création de l'utilisateur réussie</target>
+      </trans-unit>
+      <trans-unit id="usersSnackbarDeleted">
+        <source>Suppression de l'utilisateur réussie</source>
+        <target>Suppression de l'utilisateur réussie</target>
+      </trans-unit>
+      <trans-unit id="usersSnackbarExported">
+        <source>Export des utilisateurs réussi</source>
+        <target>Export des utilisateurs réussi</target>
+      </trans-unit>
+      <trans-unit id="usersSnackbarLoaded">
+        <source>Chargement des utilisateurs réussi</source>
+        <target>Chargement des utilisateurs réussi</target>
+      </trans-unit>
+      <trans-unit id="usersSnackbarUpdated">
+        <source>Mise à jour de l'utilisateur réussie</source>
+        <target>Mise à jour de l'utilisateur réussie</target>
+      </trans-unit>
+      <trans-unit id="themeToggleButtonTitle">
+        <source>Changer le thème</source>
+        <target>Changer le thème</target>
+      </trans-unit>
+      <trans-unit id="postChapterSnackbarCreatedMessage">
+        <source>Chapitre ajouté</source>
+        <target>Chapitre ajouté</target>
+      </trans-unit>
+      <trans-unit id="postChapterSnackbarDeletedMessage">
+        <source>Chapitre supprimé</source>
+        <target>Chapitre supprimé</target>
+      </trans-unit>
+      <trans-unit id="postChapterSnackbarUpdatedMessage">
+        <source>Chapitre mis à jour</source>
+        <target>Chapitre mis à jour</target>
+      </trans-unit>
+      <trans-unit id="postCoverSnackbarDeletedMessage">
+        <source>Couverture du post supprimée</source>
+        <target>Couverture du post supprimée</target>
+      </trans-unit>
+      <trans-unit id="postCoverSnackbarUpdatedMessage">
+        <source>Couverture du post mise à jour</source>
+        <target>Couverture du post mise à jour</target>
+      </trans-unit>
+      <trans-unit id="sourceLanguageTag">
+        <source>Langage source</source>
+        <target>Langage source</target>
+      </trans-unit>
+      <trans-unit id="usersActiveTooltip">
+        <source>Actif</source>
+        <target>Actif</target>
+      </trans-unit>
+      <trans-unit id="intApiAdminFuncDesc">
+        <source>Administrateur de l'api interne</source>
+        <target>Administrateur de l'api interne</target>
+      </trans-unit>
+      <trans-unit id="userPortraitSnackbarDeletedMessage">
+        <source>Suppression de l'image de profile réussie</source>
+        <target>Suppression de l'image de profile réussie</target>
+      </trans-unit>
+      <trans-unit id="userPortraitSnackbarUpdatedMessage">
+        <source>Image de profile mise à jour</source>
+        <target>Image de profile mise à jour</target>
+      </trans-unit>
+      <trans-unit id="userSnackbarUpdatedMessage">
+        <source>Mise à jour de l'utilisateur réussie</source>
+        <target>Mise à jour de l'utilisateur réussie</target>
+      </trans-unit>
+      <trans-unit id="emailPlaceholder">
+        <source>Adresse mail</source>
+        <target>Adresse mail</target>
+      </trans-unit>
+      <trans-unit id="passwordPlaceholder">
+        <source>Mot de passe</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="passwordValidation">
+        <source>Validation du mot de passe</source>
+        <target>Validation du mot de passe</target>
+      </trans-unit>
+      <trans-unit id="passwordEqual">
+        <source>Mots de passe différents</source>
+        <target>Mots de passe différents</target>
+      </trans-unit>
+      <trans-unit id="resetPassword">
+        <source>Réinitialiser le mot de passe</source>
+        <target>Réinitialiser le mot de passe</target>
+      </trans-unit>
+      <trans-unit id="confirmPasswordPlaceholder">
+        <source>Confirmer le mot de passe</source>
+        <target>Confirmer le mot de passe</target>
+      </trans-unit>
+      <trans-unit id="cancelButton">
+        <source>Annuler</source>
+        <target>Annuler</target>
+      </trans-unit>
+      <trans-unit id="emailValidation">
+        <source>Validation de l'adresse mail</source>
+        <target>Validation de l'adresse mail</target>
+      </trans-unit>
+      <trans-unit id="URLRequired">
+        <source>URL requis</source>
+        <target>URL requis</target>
+      </trans-unit>
+      <trans-unit id="nameRequired">
+        <source>Nom requis</source>
+        <target>Nom requis</target>
+      </trans-unit>
+      <trans-unit id="firstNameRequired">
+        <source>Prénom requis</source>
+        <target>Prénom requis</target>
+      </trans-unit>
+      <trans-unit id="lastNameRequired">
+        <source>Nom de famille requis</source>
+        <target>Nom de famille requis</target>
+      </trans-unit>
+      <trans-unit id="nicknameRequired">
+        <source>Surnom requis</source>
+        <target>Surnom requis</target>
+      </trans-unit>
+      <trans-unit id="mailsReceivedNav">
+        <source>Reçus</source>
+        <target>Reçus</target>
+      </trans-unit>
+      <trans-unit id="mailsSentNav">
+        <source>Envoyés</source>
+        <target>Envoyés</target>
+      </trans-unit>
+      <trans-unit id="mailsDraftNav">
+        <source>Brouillons</source>
+        <target>Brouillons</target>
+      </trans-unit>
+      <trans-unit id="mailsDeletedNav">
+        <source>Supprimés</source>
+        <target>Supprimés</target>
+      </trans-unit>
+      <trans-unit id="restoreButton">
+        <source>Restaurer</source>
+        <target>Restaurer</target>
+      </trans-unit>
+      <trans-unit id="mailReplyBtnLabel">
+        <source>Répondre</source>
+        <target>Répondre</target>
+      </trans-unit>
+      <trans-unit id="mailReplyAllBtnLabel">
+        <source>Répondre à tous</source>
+        <target>Répondre à tous</target>
+      </trans-unit>
+      <trans-unit id="mailForwardBtnLabel">
+        <source>Transférer</source>
+        <target>Transférer</target>
+      </trans-unit>
+      <trans-unit id="mailEditBtnLabel">
+        <source>Modifier</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="mailRestoreBtnLabel">
+        <source>Restaurer</source>
+        <target>Restaurer</target>
+      </trans-unit>
+      <trans-unit id="mailRemoveBtnLabel">
+        <source>Supprimer</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="mailDeleteBtnLabel">
+        <source>Supprimer définitivement</source>
+        <target>Supprimer définitivement</target>
+      </trans-unit>
+      <trans-unit id="mailThreadLabel">
+        <source>Messages précédents</source>
+        <target>Messages précédents</target>
+      </trans-unit>
+      <trans-unit id="confirmSaveMessage">
+        <source>Sauvegarder les modification?</source>
+        <target>Sauvegarder les modification?</target>
+      </trans-unit>
+      <trans-unit id="confirmDeleteMessage">
+        <source>Les messages seront supprimés définitivement, êtes-vous sûr?</source>
+        <target>Les messages seront supprimés définitivement, êtes-vous sûr?</target>
+      </trans-unit>
+      <trans-unit id="confirmDialogMessage">
+        <source>Êtes-vous sûr de vouloir poursuivre ?</source>
+        <target>Êtes-vous sûr de vouloir poursuivre ?</target>
+      </trans-unit>
+      <trans-unit id="confirmAcceptLabel">
+        <source>Oui</source>
+        <target>Oui</target>
+      </trans-unit>
+      <trans-unit id="confirmRejectLabel">
+        <source>Non</source>
+        <target>Non</target>
+      </trans-unit>
+      <trans-unit id="detailReceiverLabel">
+        <source>À</source>
+        <target>À</target>
+      </trans-unit>
+      <trans-unit id="detailSubjectLabel">
+        <source>Objet</source>
+        <target>Objet</target>
+      </trans-unit>
+      <trans-unit id="detailAttachmentsLabel">
+        <source>Pièces jointes</source>
+        <target>Pièces jointes</target>
+      </trans-unit>
+      <trans-unit id="detailThreadLabel">
+        <source>Messages précédents</source>
+        <target>Messages précédents</target>
+      </trans-unit>
+      <trans-unit id="detailDialogCloseBtn">
+        <source>Annuler</source>
+        <target>Annuler</target>
+      </trans-unit>
+      <trans-unit id="clientsNav">
+        <source>Clients</source>
+        <target>Clients</target>
+      </trans-unit>
+      <trans-unit id="stopoversNav">
+        <source>Escales</source>
+        <target>Escales</target>
+      </trans-unit>
+      <trans-unit id="invoicesNav">
+        <source>Factures</source>
+        <target>Factures</target>
+      </trans-unit>
+      <trans-unit id="mapNav">
+        <source>Carte</source>
+        <target>Carte</target>
+      </trans-unit>
+      <trans-unit id="archived">
+        <source>Archivé</source>
+        <target>Archivé</target>
+      </trans-unit>
+      <trans-unit id="aboutToArchiveUser">
+        <source>Vous êtes sur le point d'archiver un utilisateur. Continuer ?</source>
+        <target>Vous êtes sur le point d'archiver un utilisateur. Continuer ?</target>
+      </trans-unit>
+      <trans-unit id="offlineMessage">
+        <source>Vous êtes actuellement hors ligne. Les données sont stockées localement jusqu'à votre retour en ligne.</source>
+        <target>Vous êtes actuellement hors ligne. Les données sont stockées localement jusqu'à votre retour en ligne.</target>
+      </trans-unit>
+      <trans-unit id="noInternetConnection">
+        <source>Vous avez perdu votre connexion internet.</source>
+        <target>Vous avez perdu votre connexion internet.</target>
+      </trans-unit>
+      <trans-unit id="Home_DashboardSectionTitle">
+        <source>Tableau de bord</source>
+        <target>Tableau de bord</target>
+      </trans-unit>
+      <trans-unit id="Home_NotificationsSectionTitle">
+        <source>Notifications</source>
+        <target>Notifications</target>
+      </trans-unit>
+      <trans-unit id="Home_MessagesSectionTitle">
+        <source>Messages</source>
+        <target>Messages</target>
+      </trans-unit>
+      <trans-unit id="Home_RecentlyVisitedSectionTitle">
+        <source>Récemment visités</source>
+        <target>Récemment visités</target>
+      </trans-unit>
+      <trans-unit id="Translation_ProjectsProjectNameLabel">
+        <source>Nom</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="Translation_ProjectsProjectLanguagesLabel">
+        <source>Langues</source>
+        <target>Langues</target>
+      </trans-unit>
+      <trans-unit id="Table_NoData">
+        <source>Aucune donnée</source>
+        <target>Aucune donnée</target>
+      </trans-unit>
+      <trans-unit id="Translation_ProjectsProjectDescriptionLabel">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="Translation_ProjectsProjectKeyLabel">
+        <source>Clé</source>
+        <target>Clé</target>
+      </trans-unit>
+      <trans-unit id="Translation_ProjectsProjectMeaningLabel">
+        <source>Signification</source>
+        <target>Signification</target>
+      </trans-unit>
+      <trans-unit id="Users_PortraitLabel">
+        <source>Portrait</source>
+        <target>Portrait</target>
+      </trans-unit>
+      <trans-unit id="Nav_Maintenance">
+        <source>Maintenance</source>
+        <target>Maintenance</target>
+      </trans-unit>
+      <trans-unit id="Nav_NotFound">
+        <source>Non trouvé</source>
+        <target>Non trouvé</target>
+      </trans-unit>
+      <trans-unit id="Mails_mailsTitleSection">
+        <source>Messages</source>
+        <target>Messages</target>
+      </trans-unit>      
+      <trans-unit id="Translation_ProjectsProjectTranslationsLabel">
+        <source>Traductions</source>
+        <target>Traductions</target>
+      </trans-unit>
+      <trans-unit id="userLabel">
+        <source>Utilisateur</source>
+        <target>Utilisateur</target>
+      </trans-unit>
+      <trans-unit id="roleLabel">
+        <source>Rôle</source>
+        <target>Rôle</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

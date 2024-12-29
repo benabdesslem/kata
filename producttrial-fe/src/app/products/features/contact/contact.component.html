@@ -1,0 +1,54 @@
+<p-card header="Contactez-nous" class="p-mb-4">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div>
+      <p-messages [(value)]="formStatusMessage"></p-messages>
+    </div>
+    <div class="form-field p-grid">
+      <label for="email" class="p-col-12 p-md-3 p-text-bold">Email</label>
+      <div class="p-col-12 p-md-9">
+        <input
+          id="email"
+          type="email"
+          pInputText
+          formControlName="email"
+          placeholder="Entrez votre email"
+          pSize="large"
+          class="p-inputtext-lg"
+          [ngClass]="{'p-invalid': email?.invalid && (email?.dirty || email?.touched)}"
+          style="width: 100%"
+        />
+        <p-messages
+          *ngIf="email?.invalid && (email?.dirty || email?.touched)"
+          [(value)]="emailError"></p-messages>
+      </div>
+    </div>
+
+    <div class="form-field p-grid pt-2">
+      <label for="message" class="p-col-12 p-md-3 p-text-bold">Message</label>
+      <div class="p-col-12 p-md-9">
+        <textarea
+          id="message"
+          pInputTextarea
+          formControlName="message"
+          rows="5"
+          placeholder="Votre message ici"
+          [ngClass]="{'p-invalid': message?.invalid && (message?.dirty || message?.touched)}"
+          style="width: 100%"
+        ></textarea>
+        <p-messages
+          *ngIf="message?.invalid && (message?.dirty || message?.touched)"
+          [(value)]="messageError"></p-messages>
+      </div>
+    </div>
+
+    <div class="form-field flex align-items-center justify-content-center pt-2">
+      <button
+        pButton
+        label="Envoyer"
+        icon="pi pi-send"
+        [disabled]="contactForm.invalid || isSubmitting"
+        class="p-button-lg p-button-success px-8"
+      ></button>
+    </div>
+  </form>
+</p-card>

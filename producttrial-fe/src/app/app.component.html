@@ -1,0 +1,31 @@
+<p-toolbar [style]="{ height: '100px' }">
+  <div class="p-toolbar-group-start">
+    <img src="assets/icons/icon-72x72.png" alt="logo"/>
+  </div>
+  <div class="p-toolbar-group-center">
+    {{ title }}
+  </div>
+  <div class="p-toolbar-group-end" (click)="op.toggle($event)">
+    <i class="pi pi-shopping-cart" style="font-size: 2rem" pBadge [value]="totalItemsCount()"></i>
+  </div>
+</p-toolbar>
+<p-splitter
+  [panelSizes]="[20, 80]"
+  [style]="{ height: 'calc(100vh - 100px)' }">
+  <ng-template pTemplate>
+    <div class="w-full">
+      <app-panel-menu/>
+    </div>
+  </ng-template>
+  <ng-template pTemplate>
+    <div class="w-full app-content">
+      <router-outlet></router-outlet>
+    </div>
+  </ng-template>
+</p-splitter>
+
+
+<p-overlayPanel #op>
+  <app-cart-overlay></app-cart-overlay>
+</p-overlayPanel>
+
