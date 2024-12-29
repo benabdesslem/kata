@@ -1,6 +1,13 @@
-# Kata
+# Kata E-Commerce Project
 
-## Run app locally
+For this kata, I worked on both the front-end and back-end. Below are the details of the work done and how to test the application:
+
+- Front-end: Implemented features for displaying products, managing the cart, and creating the contact form.
+- Back-end: Developed an API for product management, JWT authentication, and handling the user's cart and wishlist.
+
+
+
+## Run backend app locally
 
 ```bash
 git clone https://github.com/benabdesslem/kata.git
@@ -15,11 +22,13 @@ Or you can run it from Maven directly using the Spring Boot Maven plugin:
 ./mvnw spring-boot:run
 ```
 
-Once the application is running, you can access the Swagger UI at:
-http://localhost:8080/swagger-ui/index.html
-This will allow you to interact with the API and explore its endpoints.
+Once the application is running, access the Swagger UI at http://localhost:8080/swagger-ui/index.html. To interact with
+the API, first create an account and authenticate using the login endpoint to retrieve your token. Then, click the "
+Authorize" button in Swagger UI and enter the token. After authorization, you can use the API to perform actions such as
+creating, updating, and deleting products, as well as managing your cart and wishlist directly from the Swagger
+interface.
 
-![Logo du projet](./images/1.png)
+![Swagger](./images/1.png)
 
 # APIs Used
 
@@ -154,24 +163,27 @@ This will allow you to interact with the API and explore its endpoints.
 - **Endpoint:** `GET /api/wishlist`
 - **Description:** Returns the list of products in the wishlist.
 
-
-
 # API Test Script
 
 ## Script Overview
+
 This script performs several actions to test and interact with the API. It includes the following functionalities:
 
 - **Create a User**: Calls the `POST /api/account` endpoint to create a new user.
 - **Obtain a JWT Token**: Calls the `POST /api/token` endpoint to retrieve a JWT token for authentication.
-- **Create, Update, and Delete Products**: Calls various `POST`, `PATCH`, and `DELETE` endpoints to manage products in the system.
+- **Create, Update, and Delete Products**: Calls various `POST`, `PATCH`, and `DELETE` endpoints to manage products in
+  the system.
 - **Manage Shopping Cart**: Allows adding, removing, and updating the quantities of products in the shopping cart.
 - **Manage Wishlist**: Allows adding and removing products from the wishlist.
 
 ## Requirements
+
 - `curl` (Command-line tool for making HTTP requests)
 
 ## Script Details
+
 The script will execute the following actions:
+
 1. **Create a new user** by sending a `POST` request to the `/api/account` endpoint.
 2. **Obtain a JWT token** for authentication by calling the `/api/token` endpoint.
 3. **Create products** via the `/api/products` `POST` endpoint.
@@ -186,4 +198,37 @@ To run the script, simply execute the following command:
 
 ```bash
 ./test_api.sh
+````
 
+![script](./images/1.png)
+
+#### Testing:
+
+- Unit tests are added for the service layer.
+- Integration tests are included for the resources.
+
+#### Database Configuration:
+
+- In-memory H2 database is used for development.
+- In-memory H2 database is utilized for unit tests.
+
+## Front-End
+
+The front-end is built to allow users to interact with the e-commerce platform, including:
+- Viewing product details.
+- Adding/removing products to/from the cart.
+- Displaying the cart's quantity badge.
+- Viewing the cart content.
+- Creating a "Contact" page with a form to send inquiries.
+
+### To run the front-end:
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run start
+   ```
+3. Open your browser and navigate to http://localhost:3000 to test the application.
