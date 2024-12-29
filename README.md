@@ -232,3 +232,5 @@ The front-end is built to allow users to interact with the e-commerce platform, 
    npm run start
    ```
 3. Open your browser and navigate to http://localhost:3000 to test the application.
+
+![Swagger](./images/3.png)
