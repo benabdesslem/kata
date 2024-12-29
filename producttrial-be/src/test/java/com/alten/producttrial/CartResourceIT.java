@@ -143,7 +143,7 @@ class CartResourceIT {
     }
 
     @Test
-    void shouldReturn403WhenAccessDeniedToRemoveCartItem() throws Exception {
+    void shouldReturn401WhenAccessDeniedToRemoveCartItem() throws Exception {
         // Arrange
         User anotherUser = new User();
         anotherUser.setEmail("anotheruser@example.com");
@@ -158,8 +158,57 @@ class CartResourceIT {
 
         // Act & Assert
         mockMvc.perform(delete("/api/cart/remove/{id}", cartItem.getId()))
-                .andExpect(status().isForbidden())
-                .andExpect(jsonPath("$.status", is(403)))
+                .andExpect(status().isUnauthorized())
+                .andExpect(jsonPath("$.status", is(401)))
                 .andExpect(jsonPath("$.message", is("Unauthorized to remove this item")));
+    }
+
+
+    @Test
+    void shouldReduceProductQuantitySuccessfully() throws Exception {
+        // Arrange: Add the product to the user's cart with quantity 1
+        CartItem cartItem = new CartItem();
+        cartItem.setProduct(product);
+        cartItem.setUser(user);
+        cartItem.setQuantity(1);
+        cartItemRepository.save(cartItem);
+
+        // Act & Assert: Send a PATCH request to reduce the quantity
+        mockMvc.perform(patch("/api/cart/reduce-product-quantity")
+                        .param("productId", product.getId().toString()))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    void shouldReturn404WhenProductNotFoundForReduce() throws Exception {
+        // Act & Assert
+        mockMvc.perform(patch("/api/cart/reduce-product-quantity")
+                        .param("productId", "999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status", is(404)))
+                .andExpect(jsonPath("$.message", is("Cart item not found")));
+    }
+
+    @Test
+    void shouldReturn404WhenCartItemNotFoundForUser() throws Exception {
+        // Arrange
+        User anotherUser = new User();
+        anotherUser.setEmail("anotheruser@example.com");
+        anotherUser.setPassword("password");
+        userRepository.save(anotherUser);
+
+        CartItem cartItem = new CartItem();
+        cartItem.setProduct(product);
+        cartItem.setUser(anotherUser);
+        cartItem.setQuantity(1);
+        cartItemRepository.save(cartItem);
+
+        // Act & Assert
+        mockMvc.perform(patch("/api/cart/reduce-product-quantity")
+                        .param("productId", product.getId().toString()))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status", is(404)))
+                .andExpect(jsonPath("$.message", is("Cart item not found")));
+
     }
 }

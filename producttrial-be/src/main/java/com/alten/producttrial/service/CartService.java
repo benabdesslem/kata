@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -75,5 +76,22 @@ public class CartService {
         }
 
         cartItemRepository.deleteById(cartItemId);
+    }
+
+    public Optional<CartItemDto> decrementProductQuantity(Long productId) {
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        User user = userRepository.findByEmail(username)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
+
+        CartItem cartItem = cartItemRepository.findByProductIdAndUserId(productId, user.getId()).
+                orElseThrow(() -> new ResourceNotFoundException("Cart item not found"));
+
+        if (cartItem.getQuantity() > 1) {
+            cartItem.setQuantity(cartItem.getQuantity() - 1);
+            return Optional.of(cartItemMapper.toDto(cartItemRepository.save(cartItem)));
+        }
+
+        cartItemRepository.delete(cartItem);
+        return Optional.empty();
     }
 }

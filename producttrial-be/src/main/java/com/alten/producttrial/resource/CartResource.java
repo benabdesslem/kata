@@ -6,10 +6,12 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/cart")
@@ -57,5 +59,21 @@ public class CartResource {
     public ResponseEntity<Void> removeFromCart(@PathVariable String id) {
         cartService.removeFromCart(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @Operation(
+            summary = "Reduce product quantity in the user's cart",
+            description = "Decreases the quantity of the specified product in the cart by 1 for the authenticated user."
+    )
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Product quantity reduced successfully"),
+            @ApiResponse(responseCode = "404", description = "Product or user not found")
+    })
+    @PatchMapping("/reduce-product-quantity")
+    public ResponseEntity<CartItemDto> reduceProductQuantity(@RequestParam Long productId) {
+        Optional<CartItemDto> updatedCartItem = cartService.decrementProductQuantity(productId);
+        return updatedCartItem
+                .map(cartItem -> ResponseEntity.ok(cartItem))
+                .orElseGet(() -> ResponseEntity.status(HttpStatus.OK).body(null));
     }
 }
