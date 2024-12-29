@@ -1,7 +1,7 @@
 import {Injectable, inject, signal} from "@angular/core";
 import {Product} from "./product.model";
 import {HttpClient} from "@angular/common/http";
-import {catchError, Observable, of, tap} from "rxjs";
+import {catchError, map, Observable, of, tap} from "rxjs";
 import {CartItem} from "./cart-item.model";
 import {v4 as uuidv4} from "uuid";
 
@@ -25,7 +25,7 @@ export class ProductsService {
 
   public get(): Observable<Product[]> {
     return this.http.get<Product[]>(this.productsApiUrl).pipe(
-      catchError((error) => {
+      catchError((_) => {
         return this.http.get<Product[]>("assets/products.json");
       }),
       tap((products) => this._products.set(products)),
@@ -63,39 +63,54 @@ export class ProductsService {
 
 
   public addToCart(product: Product): Observable<boolean> {
-    const cartItemId = uuidv4();
+    return this.http.post<CartItem>(`${this.cartApiUrl}/add`, {productId: product.id}).pipe(
+      catchError(() => of(this._cart().find(item => item.product.id === product.id))),
+      tap((existingItem) => {
+        if (!existingItem) {
+          this._cart.update(cart => [...cart, {id: uuidv4(), product, quantity: 1}]);
+        } else {
+          this._cart.update(cart => {
+            return cart.map(item => {
+              if (item.product.id === product.id) {
+                return {...item, quantity: item.quantity + 1};
+              }
+              return item;
+            });
+          });
+        }
+        this.updateTotalItemsCount();
+      }),
+      map(() => true)
+    );
+
+  }
+
+  public decreaseQuantity(product: Product): Observable<boolean> {
     const existingItem = this._cart().find(item => item.product.id === product.id);
 
-    if (existingItem) {
-      existingItem.quantity += 1;
-      return this.updateCartItem(existingItem);
-    } else {
-      const newCartItem: CartItem = {id: cartItemId, product, quantity: 1};
-      return this.addNewCartItem(newCartItem);
+    if (!existingItem) {
+      return of(false);
     }
-  }
 
-  private addNewCartItem(cartItem: CartItem): Observable<boolean> {
-    return this.http.post<boolean>(this.cartApiUrl, cartItem).pipe(
-      catchError(() => of(false)),
-      tap(() => {
-        this._cart.update((cart) => [...cart, cartItem]);
-        this.updateTotalItemsCount();
-      })
-    );
-  }
-
-
-  private updateCartItem(cartItem: CartItem): Observable<boolean> {
-    return this.http.put<boolean>(`${this.cartApiUrl}/${cartItem.id}`, cartItem).pipe(
-      catchError(() => of(false)),
-      tap(() => {
-        this._cart.update((cart) =>
-          cart.map((item) => (item.id === cartItem.id ? cartItem : item))
-        );
-        this.updateTotalItemsCount();
-      })
-    );
+    return this.http.post<boolean>(`${this.cartApiUrl}/reduce-product-quantity`, {productId: product.id})
+      .pipe(
+        catchError(() => of(false)),
+        tap((_) => {
+          this._cart.update(cart => {
+            return cart
+              .map(item => {
+                if (item.product.id === product.id) {
+                  const updatedItem = {...item};
+                  updatedItem.quantity -= 1;
+                  return updatedItem.quantity === 0 ? null : updatedItem;
+                }
+                return item;
+              })
+              .filter((item): item is CartItem => item !== null);
+          });
+          this.updateTotalItemsCount();
+        })
+      );
   }
 
   public removeFromCart(id: string): Observable<boolean> {

@@ -4,8 +4,12 @@
     <ul class="list-none p-0 m-0 flex flex-column gap-3">
       <ng-container *ngIf="cartItems().length > 0; else emptyCartMessage">
         <li *ngFor="let item of cartItems(); let i = index" class="flex align-items-center gap-2">
-          <div>
+          <div class="flex align-items-center justify-content-center">
+            <p-button (click)="decreaseQuantity(item.product)" icon="pi pi-minus" [rounded]="true" [outlined]="true"
+                      class="small-button mr-1"/>
             <span class="font-bold text-2xl">{{ item.quantity }}x</span>
+            <p-button (click)="increaseQuantity(item.product)" icon="pi pi-plus" [rounded]="true" [outlined]="true"
+                      class="small-button ml-1"/>
           </div>
           <div>
             <span class="font-medium">{{ item.product.name }}</span>
@@ -13,8 +17,8 @@
           </div>
           <div class="flex align-items-center gap-2 text-color-secondary ml-auto text-sm">
             <span class="font-bold">{{ item.product.price | currency }}</span>
-            <p-button icon="pi pi-trash" [rounded]="true" severity="info" [outlined]="true"
-                      (onClick)="removeFromCart(item.id)"/>
+            <p-button icon="pi pi-trash" [rounded]="true" severity="danger" [outlined]="true"
+                      (onClick)="removeFromCart(item.id)" size="small" class="delete-button"/>
           </div>
         </li>
       </ng-container>

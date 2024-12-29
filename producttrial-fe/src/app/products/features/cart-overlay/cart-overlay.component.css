@@ -1,0 +1,13 @@
+.small-button {
+  .p-button {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.delete-button {
+  .p-button {
+    width: 30px;
+    height: 30px;
+  }
+}

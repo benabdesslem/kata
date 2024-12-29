@@ -2,6 +2,7 @@ import {Component, inject, OnInit} from '@angular/core';
 import {ProductsService} from "../../data-access/products.service";
 import {CurrencyPipe, NgForOf, NgIf} from "@angular/common";
 import {Button} from "primeng/button";
+import {Product} from "../../data-access/product.model";
 
 @Component({
   selector: 'app-cart-overlay',
@@ -30,4 +31,11 @@ export class CartOverlayComponent implements OnInit {
     return this.cartItems().reduce((acc, item) => acc + item.product.price * item.quantity, 0);
   }
 
+  increaseQuantity(product: Product) {
+    this.productsService.addToCart(product).subscribe();
+  }
+
+  decreaseQuantity(product: Product) {
+    this.productsService.decreaseQuantity(product).subscribe();
+  }
 }
